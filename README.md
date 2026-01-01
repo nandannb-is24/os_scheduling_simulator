@@ -1,73 +1,90 @@
-# Welcome to your Lovable project
+# OS CPU Scheduling Simulator & Visualizer
 
-## Project info
+This project is a **web-based CPU scheduling simulator** created to help understand how different **Operating System scheduling algorithms** work in practice.  
+It allows users to **visualize process execution**, generate **Gantt charts**, and calculate important performance metrics such as **Waiting Time** and **Turnaround Time**.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+The main goal of this project is to convert **theoretical OS concepts** into a **clear visual and interactive experience**.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 Live Demo
+🔗 [Insert your Vercel URL here]
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🧠 What This Project Does
 
-Changes made via Lovable will be committed automatically to this repo.
+- Simulates how the CPU schedules processes
+- Shows step-by-step execution using a Gantt chart
+- Helps compare different scheduling algorithms
+- Calculates important OS performance metrics automatically
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## ⚙️ Scheduling Algorithms Implemented
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **FCFS (First Come First Served)**  
+  Processes are executed in the order they arrive.
 
-Follow these steps:
+- **SJF (Shortest Job First)**  
+  The process with the shortest burst time runs first.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **SRTF (Shortest Remaining Time First)**  
+  A preemptive version of SJF where the CPU switches if a shorter job arrives.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- **Round Robin**  
+  Each process gets a fixed time slice to ensure fairness.
 
-# Step 3: Install the necessary dependencies.
-npm i
+- **Priority Scheduling**  
+  Processes are scheduled based on priority (both preemptive and non-preemptive).
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## 📊 Performance Metrics Shown
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The simulator calculates the following automatically:
 
-**Use GitHub Codespaces**
+- **Turnaround Time (TAT)**  
+  Time taken from process arrival to completion.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- **Waiting Time (WT)**  
+  Time a process spends waiting in the ready queue.
 
-## What technologies are used for this project?
+- **Average Waiting Time and Turnaround Time**  
+  Used to compare which algorithm performs better.
 
-This project is built with:
+---
 
-- Vite
+## 🖥️ How to Use the Simulator
+
+1. Enter process details such as Arrival Time, Burst Time, and Priority.
+2. Select a CPU scheduling algorithm.
+3. Click **Run Simulation**.
+4. Observe the Gantt chart and performance metrics.
+5. Compare results across different algorithms.
+
+---
+
+## 🛠️ Technologies Used
+
+- React.js
 - TypeScript
-- React
-- shadcn-ui
 - Tailwind CSS
+- Vercel (for deployment)
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## 🎯 Purpose of the Project
 
-## Can I connect a custom domain to my Lovable project?
+This project is designed as an **educational tool** for students learning **Operating Systems**.  
+It helps in understanding:
+- CPU scheduling behavior
+- Process execution flow
+- Algorithm efficiency comparison
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 👨‍💻 Author
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+**Nandan**  
+Operating Systems Mini Project
