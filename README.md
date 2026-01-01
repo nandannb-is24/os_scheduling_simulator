@@ -8,7 +8,7 @@ The main goal of this project is to convert **theoretical OS concepts** into a *
 ---
 
 ## 🚀 Live Demo
-🔗 [Insert your Vercel URL here]
+🔗 https://osschedulingsimulatorpriv.vercel.app/
 
 ---
 
